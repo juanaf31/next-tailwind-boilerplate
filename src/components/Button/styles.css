@@ -1,0 +1,40 @@
+.btn {
+  padding: 8px 22px;
+  cursor: pointer;
+}
+
+.btn:active {
+  opacity: 0.9;
+}
+
+.btn.btn-primary {
+  background-color: darkcyan;
+  border: 1px solid darkcyan;
+  color: #fff;
+}
+
+.btn.btn-primary.btn-outlined {
+  background-color: transparent;
+  border: 1px solid darkcyan;
+  color: darkcyan;
+}
+
+.btn.btn-secondary {
+  background-color: maroon;
+  border: 1px solid maroon;
+  color: #fff;
+}
+
+.btn.btn-secondary.btn-outlined {
+  background-color: transparent;
+  border: 1px solid maroon;
+  color: maroon;
+}
+
+.btn:disabled {
+  background-color: darkgray;
+  border-color: darkgray;
+  color: gray;
+  cursor: not-allowed;
+  transform: none;
+}
