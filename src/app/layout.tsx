@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
+import { UserProvider } from '@auth0/nextjs-auth0/client'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classNames(manrope.className, 'overflow-hidden')}>
-        {children}
+        <UserProvider>{children}</UserProvider>
       </body>
     </html>
   )
